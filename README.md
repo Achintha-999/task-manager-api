@@ -17,7 +17,7 @@ Task Manager API is a simple RESTful API built with Node.js, Express, and Sequel
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Achintha-999/task-manager-api
    cd task-manager-api
 
 2. Install dependencies:
