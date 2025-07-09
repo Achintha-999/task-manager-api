@@ -1,58 +1,87 @@
-# Task Manager API
+# 📝 Task Manager API
 
-Task Manager API is a simple RESTful API built with Node.js, Express, and Sequelize. It allows you to manage tasks with basic CRUD operations.
+**Task Manager API** is a lightweight RESTful service built using **Node.js**, **Express**, and **Sequelize**, designed to manage your tasks with seamless CRUD operations.
 
-## Features
+---
 
-- Create, read, update, and delete tasks.
-- Uses SQLite as the database.
-- Sequelize ORM for database interaction.
+## 🚀 Features
 
-## Prerequisites
+- ✅ Create, read, update, and delete tasks  
+- 🗃️ SQLite database integration  
+- 🔧 Sequelize ORM for smooth data handling
 
-- Node.js (v14 or higher)
-- npm (v6 or higher)
+---
 
-## Installation
+## 📦 Prerequisites
 
-1. Clone the repository:
+Make sure you have the following installed:
+
+- 🟢 Node.js (v14 or higher)  
+- 📦 npm (v6 or higher)
+
+---
+
+## 🛠️ Installation
+
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/Achintha-999/task-manager-api
    cd task-manager-api
+   ```
 
-2. Install dependencies:
-  npm install
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-3. Run database migrations:
-  npx sequelize-cli db:migrate
+3. **Run database migrations**:
+   ```bash
+   npx sequelize-cli db:migrate
+   ```
 
-Usage
+---
 
-1. Start the server:
-node server.js
+## ▶️ Usage
 
-2. The server will run on http://localhost:3000.
+1. **Start the server**:
+   ```bash
+   node server.js
+   ```
 
-3. Use the following endpoints to interact with the API:
+2. The server will run at: [http://localhost:3000](http://localhost:3000)
 
-GET /tasks: Retrieve all tasks.
-POST /tasks: Create a new task. Send a JSON body with title, description, and completed fields.
-GET /task: Retrieve a single task.
+3. **API Endpoints**:
 
-Project Structure
+   | Method | Endpoint      | Description                    |
+   |--------|---------------|--------------------------------|
+   | GET    | `/tasks`      | Retrieve all tasks             |
+   | POST   | `/tasks`      | Create a new task              |
+   | GET    | `/task`       | Retrieve a single task         |
 
-config/
-  config.json       # Database configuration
-database.sqlite     # SQLite database file
-migrations/         # Sequelize migrations
-models/             # Sequelize models
-  index.js          # Model initialization
-  task.js           # Task model
-seeders/            # Sequelize seeders (if any)
-server.js           # Main server file
-package.json        # Project metadata and dependencies
+---
 
-Dependencies
-Express - Web framework for Node.js
-Sequelize - ORM for Node.js
-SQLite3 - Lightweight database engine
+## 🗂️ Project Structure
+
+```
+├── config/
+│   └── config.json       # Database configuration
+├── database.sqlite       # SQLite database file
+├── migrations/           # Sequelize migrations
+├── models/
+│   ├── index.js          # Model initialization
+│   └── task.js           # Task model
+├── seeders/              # Sequelize seeders (optional)
+├── server.js             # Main server file
+└── package.json          # Project metadata and dependencies
+```
+
+---
+
+## 📚 Dependencies
+
+- 🌐 **Express** – Web framework for Node.js  
+- 📘 **Sequelize** – Promise-based ORM for Node.js  
+- 🪶 **SQLite3** – Lightweight and fast database engine
+
+---
+
